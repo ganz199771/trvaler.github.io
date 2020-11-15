@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "数值分析c++方法算例集", "数值分析c++方法算例集.vcxproj", "{BBB69FD3-F2FD-445F-9019-DBC267378CDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBB69FD3-F2FD-445F-9019-DBC267378CDC}.Debug|x64.ActiveCfg = Debug|x64
+		{BBB69FD3-F2FD-445F-9019-DBC267378CDC}.Debug|x64.Build.0 = Debug|x64
+		{BBB69FD3-F2FD-445F-9019-DBC267378CDC}.Debug|x86.ActiveCfg = Debug|Win32
+		{BBB69FD3-F2FD-445F-9019-DBC267378CDC}.Debug|x86.Build.0 = Debug|Win32
+		{BBB69FD3-F2FD-445F-9019-DBC267378CDC}.Release|x64.ActiveCfg = Release|x64
+		{BBB69FD3-F2FD-445F-9019-DBC267378CDC}.Release|x64.Build.0 = Release|x64
+		{BBB69FD3-F2FD-445F-9019-DBC267378CDC}.Release|x86.ActiveCfg = Release|Win32
+		{BBB69FD3-F2FD-445F-9019-DBC267378CDC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {270C84A7-A1E8-4247-88A2-F64BFFB914F8}
+	EndGlobalSection
+EndGlobal

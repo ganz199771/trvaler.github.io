@@ -219,6 +219,11 @@ double** Hessenberg(double** a, int n) {
 			}
 		}
 	} while (times == 1);
+
+	delete[]q;
+	delete[]p;
+	delete[]u;
+
 	return a;
 }
 
@@ -284,6 +289,14 @@ double** QR_One_Step(double** a, int n, double limit) {
 		if (abs(a[i][i - 1]) < limit * Min_num(a[i][i], a[i - 1][i - 1]))
 			a[i][i - 1] = 0.0;
 	}
+
+	for (int i = 0; i < n; ++i)
+		delete[]Q[i];
+	delete[]Q;
+	delete[]w;
+	delete[]p;
+	delete[]u;
+	
 	return a;
 }
 
@@ -401,6 +414,11 @@ double** QR_Split(double** a, int n) {
 			Minus(a, Vec_Multi_Vec(u, p, n), n);
 		}
 	}
+
+	delete[]w;
+	delete[]p;
+	delete[]u;
+
 	return Q;
 }
 
@@ -429,6 +447,15 @@ void Step_9(double** a, int m) {
 	Q = QR_Split(MK, m);
 	Assign(a, Multi_M(T_Matrix(Q, m), a, m), m);
 	Assign(a, Multi_M(a, Q, m), m);
+
+	for (int i = 0; i < m; ++i) {
+		delete[]MK[i];
+		delete[]Lose[i];
+		delete[]Q[i];
+	}
+	delete[]MK;
+	delete[]Lose;
+	delete[]Q;
 }
 
 
